@@ -55,7 +55,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-
+  gem "rails_live_reload"
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 end
 
@@ -64,3 +64,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "guard-livereload", "~> 2.5"
+
+gem "rack-livereload", "~> 0.5.1"
